@@ -1,1 +1,10 @@
-<p>list works!</p>
+<div *ngFor="let filme of filmes | async">
+  <div>
+    <h5>{{ filme.titulo }}</h5>
+    <p>{{ filme.ano }}</p>
+  </div>
+  <div>
+    <button type="button" (click)="edit(filme, filme.key)">Editar</button>
+    <button type="button" (click)="delete(filme.key)">Excluir</button>
+  </div>
+</div>
