@@ -35,6 +35,7 @@ export class EditComponent implements OnInit {
     }
 
     this.filme = new Filme();
+    this.key = '';
   }
 
 }
