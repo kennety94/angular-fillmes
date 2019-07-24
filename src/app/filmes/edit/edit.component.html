@@ -1,12 +1,14 @@
-<form (ngSubmit)="onSubmit()">
-    <div>
-        <label>Título</label>
-        <input type="text" [(ngModel)]="filme.titulo" name="titulo">
-    </div>
-    <div>
-        <label>Ano</label>
-        <input type="text" [(ngModel)]="filme.ano" name="ano">
-    </div>
-
-    <button type="submit">Salvar</button>
-</form>
+<div style="margin-top: 7px; margin-bottom: 7px">
+    <form (ngSubmit)="onSubmit()" class="container col-xs-12 col-sm-6 col-md-3">
+        <div class="form-group">
+            <label for="titulo">Título</label>
+            <input type="text" class="form-control" [(ngModel)]="filme.titulo" name="titulo">
+        </div>
+        <div class="form-group">
+            <label for="ano">Ano</label>
+            <input type="text" class="form-control" [(ngModel)]="filme.ano" name="ano">
+        </div>
+    
+        <button class="btn btn-success" type="submit">Salvar</button>
+    </form>
+</div>
